@@ -15,6 +15,8 @@ public class TestingClass implements java.io.Serializable {
 
 	private java.lang.Double doubleField;
 
+	private java.math.BigDecimal bigField;
+
 	public TestingClass() {
 	}
 
@@ -58,14 +60,24 @@ public class TestingClass implements java.io.Serializable {
 		this.doubleField = doubleField;
 	}
 
+	public java.math.BigDecimal getBigField() {
+		return this.bigField;
+	}
+
+	public void setBigField(java.math.BigDecimal bigField) {
+		this.bigField = bigField;
+	}
+
 	public TestingClass(java.lang.Integer intField,
 			java.lang.String inputString, java.lang.String outputString,
-			java.lang.Long longField, java.lang.Double doubleField) {
+			java.lang.Long longField, java.lang.Double doubleField,
+			java.math.BigDecimal bigField) {
 		this.intField = intField;
 		this.inputString = inputString;
 		this.outputString = outputString;
 		this.longField = longField;
 		this.doubleField = doubleField;
+		this.bigField = bigField;
 	}
 
 }
