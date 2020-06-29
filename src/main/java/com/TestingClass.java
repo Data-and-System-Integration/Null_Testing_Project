@@ -6,12 +6,55 @@ package com;
 
 public class TestingClass implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public TestingClass() {
-    }
+	private java.lang.Integer intField;
+	private java.lang.String inputString;
+	private java.lang.String outputString;
+	private java.lang.Long longField;
 
+	public TestingClass() {
+	}
 
+	public java.lang.Integer getIntField() {
+		return this.intField;
+	}
 
+	public void setIntField(java.lang.Integer intField) {
+		this.intField = intField;
+	}
+
+	public java.lang.String getInputString() {
+		return this.inputString;
+	}
+
+	public void setInputString(java.lang.String inputString) {
+		this.inputString = inputString;
+	}
+
+	public java.lang.String getOutputString() {
+		return this.outputString;
+	}
+
+	public void setOutputString(java.lang.String outputString) {
+		this.outputString = outputString;
+	}
+
+	public java.lang.Long getLongField() {
+		return this.longField;
+	}
+
+	public void setLongField(java.lang.Long longField) {
+		this.longField = longField;
+	}
+
+	public TestingClass(java.lang.Integer intField,
+			java.lang.String inputString, java.lang.String outputString,
+			java.lang.Long longField) {
+		this.intField = intField;
+		this.inputString = inputString;
+		this.outputString = outputString;
+		this.longField = longField;
+	}
 
 }
