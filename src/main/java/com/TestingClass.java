@@ -13,6 +13,8 @@ public class TestingClass implements java.io.Serializable {
 	private java.lang.String outputString;
 	private java.lang.Long longField;
 
+	private java.lang.Double doubleField;
+
 	public TestingClass() {
 	}
 
@@ -48,13 +50,22 @@ public class TestingClass implements java.io.Serializable {
 		this.longField = longField;
 	}
 
+	public java.lang.Double getDoubleField() {
+		return this.doubleField;
+	}
+
+	public void setDoubleField(java.lang.Double doubleField) {
+		this.doubleField = doubleField;
+	}
+
 	public TestingClass(java.lang.Integer intField,
 			java.lang.String inputString, java.lang.String outputString,
-			java.lang.Long longField) {
+			java.lang.Long longField, java.lang.Double doubleField) {
 		this.intField = intField;
 		this.inputString = inputString;
 		this.outputString = outputString;
 		this.longField = longField;
+		this.doubleField = doubleField;
 	}
 
 }
